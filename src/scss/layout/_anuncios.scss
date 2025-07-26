@@ -1,0 +1,42 @@
+@use 'sass:color';
+
+@include tablet{
+    .container-ads {
+        @include grid(3, 2rem)
+    }
+}
+.ads{
+    margin-bottom: 1rem;
+    background-color: color.adjust($grey, $lightness: 5%);
+    border: 1px solid color.adjust($grey, $lightness: -20%);
+    .content-ads{
+        padding: 2rem;
+    }
+    h3, p{
+        margin: 0;
+    }    
+}
+
+.price{
+    color: $green;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+ .icons-characteristics{
+        display: flex;
+        list-style: none;
+        padding: 0;
+        max-width: 40rem;
+        li{
+            flex: 1;
+            display: flex;
+            img{
+                flex: 0 0 3rem;
+                margin-right: 1rem;
+            }
+            p{
+                font-weight: $black;
+            }
+        }
+    }

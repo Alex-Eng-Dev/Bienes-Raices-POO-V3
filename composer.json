@@ -1,0 +1,19 @@
+{
+    "name": "agplay/bienesraicesphp_con_poo",
+    "description": "Creando un proyecto con POO",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\" : "./clases"
+        }
+    },
+    "authors": [
+        {
+            "name": "alexis",
+            "email": "alexis.bautista@omiwave.com"
+        }
+    ],
+    "require": {
+        "intervention/image": "^3.11"
+    }
+}

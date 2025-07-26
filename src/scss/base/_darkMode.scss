@@ -1,0 +1,40 @@
+@use 'sass:color';
+.dark-mode{
+    background-color: color.adjust($darkgray, $lightness: 5%);
+
+    p{
+        color: $white;
+    }
+    a, h1, h2, h3, h4{
+        color: $grey;
+    }
+
+    .ads{
+        background-color: color.adjust($darkgray, $lightness: 35%);
+        border: 1px solid $darkgray;
+
+        .price{
+            color: $green;
+        }
+    }
+
+    .text-us blockquote{
+        color: $white;
+    }
+
+    .formulario{
+        label,
+        legend,
+        p{
+            color: $grey;
+        }
+
+        input:not([type="submit"]),
+        textarea,
+        select{
+            background-color: color.adjust($darkgray, $lightness: 15%);
+            border: 1px solid $darkgray;
+            color: $white;
+    }
+    }
+}

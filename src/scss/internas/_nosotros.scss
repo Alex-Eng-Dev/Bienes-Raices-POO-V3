@@ -1,0 +1,12 @@
+.content-us{
+    @include tablet{
+        @include grid(2, 2rem);
+    }
+}
+
+.text-us blockquote{
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin: 3rem 0 0 0;
+    padding-left: 1rem 0 3rem 0;
+}

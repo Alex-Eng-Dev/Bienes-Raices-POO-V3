@@ -1,0 +1,49 @@
+.start {
+    background-image: url(../../../build/img/header.jpg);
+    max-width: 100%;
+}
+ 
+.start {
+    background-image: url(../../../build/img/header.webp);
+    max-width: 100%;
+}
+
+
+
+.header{
+   background-color: $darkgray;
+   padding: 1rem 0 3rem 0;
+
+   &.start{
+    background-position: center center;
+    background-size: cover;
+
+    @include tablet{
+        min-height: 70rem;
+    }
+
+    .content-header{
+    @include tablet{
+        min-height: 70rem;
+    }
+    }
+    
+   }
+   
+}
+
+.content-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    h1{
+        text-align: left;
+        color: $white;
+        font-weight: 700;
+        line-height: 2;
+        max-width:60rem;
+    }
+    
+}
